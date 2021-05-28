@@ -1,0 +1,55 @@
+label{
+	margin-left: 20px;
+}
+#datepicker{
+/* 	width:180px; 
+	margin: 0 20px 20px 20px; */
+}
+#datepicker > span:hover{
+	cursor: pointer;
+}
+#datepicker2 > span:hover{
+	cursor: pointer;
+}
+#datepicker3 > span:hover{
+	cursor: pointer;
+}
+
+#datepicker4 > span:hover{
+	cursor: pointer;
+}
+#datepicker5 > span:hover{
+	cursor: pointer;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    cursor: pointer;
+    background-color: #fff;
+}
+.input-group-addon {
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+
+a{
+	text-decoration: none;
+}
+.input-group.date{
+	width: calc( 100% - 80px );
+
+}
+.input-group.date > input{
+	width: calc( 100% - 25px - 18px );
+	font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #c1c1c1;
+    padding: 9px;
+    box-sizing: border-box;
+    color: #5C5C5C;
+    height: 40px;
+}
+.input-group.date > span{
+	width: 25px;
+	/* display: inline-block; */
+	padding: 11px 8px;
+}

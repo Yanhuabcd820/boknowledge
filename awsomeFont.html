@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	    <link rel="stylesheet" href="awsomeFont-all.css">
+	    <script src="awsomefont-all.js"></script>
+
+	    <style>
+	    	body{
+				overflow: auto;
+			}
+
+			.fixed-cover{
+				position: fixed;
+				top: 0;
+				left: 0;
+				background-color: #000;
+				width: 100%;
+				height: 100%;
+				z-index: 55555;
+				display: none;
+			}
+			.project-review-attention-fill-btn-top{
+				width: 100%;
+				margin: 0 auto 20px auto;
+				border-bottom: 1px solid #c1c1c1;
+				position: relative;
+			}
+
+			.project-review-attention-fill-btn-top a .fa-trash-alt{
+				margin-right: 10px;
+				margin-bottom: 10px;
+			    color: #5c5c5c;
+			    font-size: 200px;
+			    outline: 1px solid #F00;
+			    padding: 35px;
+			}
+
+
+			.light-box{
+				width: 100%;
+				height: 225px;
+				margin: 0 auto;
+				margin-top: 0px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				z-index: 5555555;
+				background-color: #fff;
+				border: 1px solid #aaa;
+				display: none;
+			}
+
+			@media screen and (min-width: 768px){
+				.light-box{
+					width: 500px;
+					height: 225px;
+					margin: 0 auto;
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					z-index: 5555555;
+					background-color: #fff;
+					border: 1px solid #aaa;
+					display: none;
+				}
+			}
+			.light-box.mt230{
+					margin-top: 230px;
+
+			}
+			.button-wrap .button{
+				margin-top: 15px;
+			}
+			.light-box > .light-close{
+				width: 100%;
+				overflow: auto; 
+			}
+			.light-box > .light-close > .fa-times{
+				float: right;
+				font-size: 28px;
+				margin-top: 20px;
+				margin-right: 20px;
+				cursor: pointer;
+			}
+			.light-box > p{
+				text-align: center;
+				font-size: 17px;
+				margin: 20px 0px;
+			}
+
+
+			.button-wrap{
+				display: flex;
+				justify-content: center;
+				margin: 0 auto;
+				width: auto;
+			}
+
+			.button{
+				border-radius: 10px;
+				background-color: #73C92D;
+				color: #fff;
+				padding: 13px 16px;
+				display: inline-block;
+				margin: 20px 10px;
+				margin-top: 130px;
+				border: 0px;
+			}
+
+
+			@media screen and (min-width: 768px){
+				.button{
+					margin-top: 20px;
+				}
+			}
+	    </style>	
+	</head>
+	<body id="menu-cover">
+		<div class="fixed-cover"></div>
+		<div class="project-review-attention-fill-btn-top">
+			<a href="javascript:;">
+				<i class="far fa-trash-alt"></i>
+			</a>
+
+
+
+
+			<div class="light-box">
+				<div class="light-close">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</div>
+				<p>
+					確定要刪除此筆專案工單?
+				</p>
+				<div class="button-wrap">
+					<a class="button light-cancle" href="javascript:;">取消</a>
+					<a class="button light-yes" href="javascript:;">確定</a>
+				</div>
+			</div>
+
+
+		
+		</div>
+		
+		<!-- 確認是否刪除的燈箱 -->
+		<script>
+			const projectReviewAttentionFillBtnTop = document.querySelector('.project-review-attention-fill-btn-top')
+			const lightBox = document.querySelector('.light-box')
+			const menuCover = document.querySelector('#menu-cover')
+			const fixedCover = document.querySelector('.fixed-cover')
+
+			projectReviewAttentionFillBtnTop.addEventListener('click', showLightBox)
+
+			function showLightBox(event) {
+				console.log(event.target)
+				if (event.target.matches('.fa-trash-alt')) {
+					lightBox.style.display = 'block'
+					fixedCover.style.display = 'block'
+					menuCover.style.overflow = 'hidden'
+				}
+
+				if (event.target.matches('.fa-times') || event.target.matches('.light-cancle')) {
+					lightBox.style.display = 'none'
+					fixedCover.style.display = 'none'
+					menuCover.style.overflow = 'auto'
+				}
+			}
+
+		</script>
+
+	</body>
+	</html>	

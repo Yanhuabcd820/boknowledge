@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BOKNOWLEDGE</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header-know.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/boknowledge.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- <script src="js/water.js"></script> -->
+    <!-- <script src="js/XX.js"></script> -->
+</head>
+<body>
+	<header>
+		<div class="header-inner">
+			<div class="header-left">
+				<div class="logo" onclick="location.href='iDesign.html';" style="cursor:pointer;"><img src="images/BOKNOWLEDGE.svg"></div>
+				<label>
+					<input type="checkbox" class="chk" name="" id="">
+					<span class="box" >
+						<span class="btn"></span></span>
+					</span>
+				</label>
+				<a href="index.html">登出</a>
+			</div>
+			<input type="checkbox" name="" id="menu-control">
+			<label class="hb" for="menu-control">
+				<span class="bar bar1"></span>
+				<span class="bar bar2"></span>
+				<span class="bar bar3"></span>
+			</label>
+			<ul class="nav">
+				<li><a href="iDesign.html">iDesign<span class="nav-line-on"></span></a></li>
+				<li><a href="resource.html">資源分享<span class="nav-line"></span></a></li>
+				<li><a href="project.html">我的專案<span class="nav-line"></span></a></li>
+				<li><a href="customer.html">客戶資料<span class="nav-line"></span></a></li>
+				<li><a href="contractor.html">廠商管理<span class="nav-line"></span></a></li>
+				<li class="nav-layer"><a href="javascript:;">經營管理<span class="nav-line"></span></a>
+					<ul class="nav-layer-bottom">
+                        <li><a href="manage-projectExpense.html">專案支出</a></li>
+                        <li><a href="manage-generalExpense.html">管銷費用</a></li>
+                        <li><a href="manage-staff.html">人員管理</a></li>
+                        <li><a href="manage-analysis.html">分析報告</a></li>
+                        <li><a href="manage-setting.html">其他設定</a></li>
+					</ul>
+
+				</li>
+				<li><a href="staff.html" class="sayhi">
+					<!-- <span class="nav-line"> -->
+					<span class="sayhi-inner">
+						<span>Hi Jason!</span>
+						<img src="images/hi.svg">
+					</span>
+					<!-- <span class="nav-line-on"> -->
+					<span class="nav-line"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="blank-space-small"></div>
+  
+	<div class="content-bo-outside">
+
+
+		<div class="content-bo block">
+
+			<div class="crumb">
+				<a href="boknowledge.html">iDesign</a> > 新增iDesign
+			</div>
+			<h4>新增iDesign</h4>
+
+			
+		</div>
+
+	</div>
+	<form action="" onkeypress="return event.keyCode != 13;">
+		<div class="content-bo-outside">
+
+			<div class="content-bo content-bo-add content-bo-advise">
+
+				<div class="content-bo-add-left">
+
+					<table class="add-table1">
+						<tr>
+							<td>參考範圍</td>
+							<td>
+								<select name="from">
+								　<option value="from-project">公司專案</option>
+								　<option value="from-information">其他參考</option>
+
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>專案編號
+							</td>
+							<td>
+								<input type="text" name="" id="">
+							</td>
+						</tr>
+						<tr>
+							<td>專案名稱
+							</td>
+							<td>
+								<input type="text" name="" id="">
+							</td>
+						</tr>
+					</table>
+					<table class="add-table2">
+						<tr>
+							<td>說明
+							</td>
+							<td>
+								<textarea placeholder="請輸入內容"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>新增關鍵字</td>
+							<td class="bo-button-all-td">
+								<input type="text" class="input-keyword">
+								<input type="button" value="新增" class="input-keyword-btn">
+							</td>
+						</tr>
+						<tr>
+							<td class="input-keyword-dist"></td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="content-bo-add-center">
+
+				
+				</div>
+				<div class="content-bo-add-right">
+					<label style="cursor: pointer;" class="content-bo-add-element">
+						<span>上傳<br>照片</span>
+						<input type="file" name="" id="" style="display: none;">
+					</label>
+					<div class="content-bo-add-element">
+						<a onclick="location.href='javascript:;';" style="cursor:pointer;" class="delete-img"></a>
+						<img src="images/boknowledge-add-pic.jpg">
+					</div>
+					<div class="content-bo-add-element">
+						<a onclick="location.href='javascript:;';" style="cursor:pointer;" class="delete-img"></a>
+						<img src="images/boknowledge-add-pic.jpg">
+					</div>
+					<div class="content-bo-add-element">
+						<a onclick="location.href='javascript:;';" style="cursor:pointer;" class="delete-img"></a>
+						<img src="images/boknowledge-add-pic.jpg">
+					</div>
+					<div class="content-bo-add-element">
+						<a onclick="location.href='javascript:;';" style="cursor:pointer;" class="delete-img"></a>
+						<img src="images/boknowledge-add-pic.jpg">
+					</div>
+					<div class="content-bo-add-element">
+						<a onclick="location.href='javascript:;';" style="cursor:pointer;" class="delete-img"></a>
+						<img src="images/boknowledge-add-pic.jpg">
+					</div>
+				</div>
+			</div>
+
+			<div class="project-review-attention-fill-btn">
+				<!-- <a href="">儲存</a> -->
+				<button>儲存</button>
+				<a href="iDesign.html">取消</a>
+			</div>
+		</div>
+		<!-- <input style="display:none"/> -->
+	</form>
+	
+
+
+
+	<footer>
+		<h6>Copyright © 2020 BORNA</h6>
+	</footer>
+
+
+
+
+
+	<!-- 新增關鍵字 -->
+	<script src="js/bo-inputKeyword.js"></script>
+
+	<!-- 刪除上傳圖片 -->
+	<script>
+		const deleteImg = document.querySelectorAll('.delete-img')
+		deleteImg.forEach(function(btn){
+			btn.addEventListener('click', function(event){
+				console.log(event.target)
+				event.target.parentElement.remove()
+			})
+		})
+	</script>
+
+
+   
+</body>
+</html>

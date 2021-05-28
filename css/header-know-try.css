@@ -1,0 +1,436 @@
+header{
+	border-bottom: 1px solid #C1C1C1;
+	background-color: #fff;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99999999999;
+ 
+}
+header > .header-inner {
+	width: 320px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	/* padding: 15px 0px 7px 0px; */
+	padding: 29px 0px 17px 0px;
+}
+
+ 
+@media screen and (min-width: 414px){
+	header > .header-inner {
+		width: 414px;
+		padding: 29px 0px 17px 0px;
+	}
+
+}
+@media screen and (min-width: 768px){
+	header > .header-inner {
+		width: 738px;
+	}
+
+}
+
+@media screen and (min-width: 1024px){
+	header > .header-inner {
+		width: 984px;
+	}
+}
+
+@media screen and (min-width: 1280px){
+	header > .header-inner {
+		width: 1230px;
+		padding: 0px 0px 17px 0px;
+	}	
+	header > .header-index {
+		width: 1230px;
+		padding: 30px 0px 17px 0px;
+	}	
+}
+
+@media screen and (min-width: 1680px){
+
+	header > .header-inner {
+		width: 1476px;
+	}
+}
+@media screen and (min-width: 1900px){
+	header > .header-inner {
+		width: 1722px;
+	}	
+}
+
+
+header > .header-inner > .header-left {
+	padding-left: 0px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px){
+	header > .header-inner > .header-left {
+		/* padding-left: 50px; */
+	}
+}
+
+
+header > .header-inner > .header-left > a {
+	font-size: 12px;
+	padding: 15px 0px 5px 0px;
+	text-decoration: underline;
+	/* outline: 1px solid #F00; */
+}
+
+
+@media screen and (min-width: 414px){
+	header > .header-inner > .header-left > a {
+		padding: 15px 0px 5px 15px;
+	}
+}
+/* 
+@media screen and (min-width: 768px){
+	header > .header-inner > .header-left > a {
+		padding: 15px 0px 5px 15px;
+	}
+}
+ */
+
+header > .header-inner > .header-left > .logo > img{
+	width: 154px;
+}
+header > .header-inner > .header-left > label > input.chk{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -99999;
+	display: none;
+}
+
+header > .header-inner > .header-left > label > .box{
+	display: inline-block;
+	width: 118px;
+	height: 31px;
+	background-color: #F4F4F4;
+	border: 1px solid #73C92D;
+	border-radius: 8px;
+	font-size: 13px;
+	font-weight: bold;
+	margin-left: 14px;
+	position: relative;
+}
+
+@media screen and (min-width: 320px){
+	header > .header-inner > .header-left > label > .box{
+		width: 118px;
+	}
+}
+@media screen and (min-width: 768px){
+	header > .header-inner > .header-left > label > .box{
+		margin-left: 24px;
+	}
+}
+
+header > .header-inner > .header-left > label > .box > .btn{
+	display: inline-block;
+	width: 58px;
+	height: 31px;
+	background-color: #73C92D;
+	border: 1px solid #73C92D;
+	border-radius: 8px;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+}
+
+header > .header-inner > .header-left > label > .box:before{
+	content: '上班中';
+	width: 58px;
+	height: 31px;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+header > .header-inner > .header-left > label > .box:after{
+	content: '休息中';
+	width: 58px;
+	height: 31px;
+	color: #A0A0A0;
+	line-height: 30px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+header > .header-inner > .header-left > label > .chk:checked + .box > .btn{
+	margin-left: 60px;
+}
+header > .header-inner > .header-left > label > .chk:checked + .box:before{
+	color: #A0A0A0;
+}
+
+header > .header-inner > .header-left > label > .chk:checked + .box:after{
+	color: #fff;
+}
+#menu-control{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+label.hb {
+	width: 22px;
+	height: 15px;
+	position: relative;
+	margin-top: 7px;
+	display: block;
+}
+label.hb > .bar{
+	width: 20px;
+	height: 2px;
+	background-color: #707070;
+	position: absolute;
+	top: 8px;
+	left: 1px;
+}
+label.hb > .bar1{
+	display: block;
+}
+
+label.hb > .bar2{
+	top: 0px;
+}
+
+label.hb > .bar3{
+	top: 16px;
+}
+@media screen and (min-width: 1280px){
+	label.hb{
+		display: none;
+	}
+}
+#menu-control:checked ~ label.hb > .bar1{
+	display: none;
+	
+}
+#menu-control:checked ~ label.hb > .bar2{
+	transform: translateY(7px) rotate(45deg);
+	
+}
+#menu-control:checked ~ label.hb > .bar3{
+	transform: translateY(-9px) rotate(-45deg);
+}
+#menu-control:checked ~ .nav {
+	display: flex;
+} 
+
+header > .header-inner > .nav {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	margin-top: 115.48px;
+	padding-top: 15px;
+	align-content: flex-start;
+}
+@media screen and (min-width:768px){
+	header > .header-inner > .nav {
+		/* margin-top: 83px; */
+	}
+}
+@media screen and (min-width: 1280px){
+	header > .header-inner > .nav {
+		width: 610px;
+		height: auto;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+		align-items: flex-end;
+		flex-direction: row;
+		position: relative;
+		margin-top: 0px;
+		padding-top: 0px; 
+	}
+}
+
+header > .header-inner > .nav > li {
+	text-decoration: none;
+	font-size: 14px;
+	margin: 0px 13px;
+	position: relative;
+	top: 13px;
+	left: 0;
+	padding-bottom: 40px;
+	margin: 0 auto;
+	text-align: center;
+	width: 40%;
+	align-items: flex-start;
+	align-content: flex-start;
+
+}
+
+@media screen and (min-width: 1280px){
+	header > .header-inner > .nav > li {
+		font-size: 14px;
+		margin: 0px 13px;
+		position: relative;
+		top: 13px;
+		left: 0;
+		padding-bottom: 13px;
+		width: auto;
+	}
+}
+
+header > .header-inner > .nav > li a{
+	text-decoration: none;
+	display: inline-block;
+}
+
+
+header > .header-inner > .nav > li > a > span.nav-line {
+	content: '';
+	display: block;
+	clear: both;
+	border-bottom: 5px solid #73C92D;
+	position: relative;
+	top: 17px;
+	left: 0;
+	opacity: 0;
+	transform: scale(0, 1);
+}
+header > .header-inner > .nav > li:hover > a > span.nav-line {
+	opacity: 1;
+	transition: .7s;
+	transform: scale(1, 1)
+
+}
+
+header > .header-inner > .nav > li > a > span.nav-line-on {
+	content: '';
+	display: block;
+	clear: both;
+	border-bottom: 5px solid #73C92D;
+	position: relative;
+	top: 17px;
+	left: 0;
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+
+
+header > .header-inner > .nav > li.nav-layer{
+	position: relative;
+}
+
+
+
+ul.nav > li.nav-layer > ul.nav-layer-bottom > li {
+	display: block;
+	width: 100%;
+	height: 100%;
+ 	line-height: 33px;
+    text-align: center;
+ }
+
+ul.nav > li.nav-layer > ul.nav-layer-bottom > li > a:hover{
+	color: #73C92D;
+ }
+
+
+ul.nav > li.nav-layer > ul.nav-layer-bottom {
+    display: block;
+	border-radius: 9px;
+	border: 1px solid #73C92D;
+	background-color: rgba(255, 255, 255, 1);
+	width: 100%;
+	margin: 16px auto 0px auto;
+}
+ul.nav > li.nav-layer:hover > ul.nav-layer-bottom { 
+    display: block;
+
+}
+@media screen and (min-width: 1280px) {
+	ul.nav > li.nav-layer > ul.nav-layer-bottom {
+        position: absolute;
+        z-index: 99;
+        left: 0px;
+        top: 20px;
+        width: 110px;
+		background-color: rgba(255, 255, 255, 1);
+        text-align: left;
+		padding: 11px 15px;
+        display: none;
+   		opacity: 1;
+  	 	transition: opacity .2s;
+		transform: translateX(-26px);
+		box-sizing: border-box;
+
+
+    }
+
+    ul.nav > li.nav-layer > ul.nav-layer-bottom > li > a {
+        text-decoration: none;
+        font-weight: normal;
+        transition: color .3s;
+        /* outline: 1px solid #F00; */
+    }
+    
+	.li-picked,
+    ul.nav > li.nav-layer > ul.nav-layer-bottom > li > a:hover
+	  {
+		color: #73C92D;
+        transition: color .3s;
+		font-weight: bold;
+    }
+
+    ul.nav li.nav-layer:hover > ul.nav-layer-bottom { /* 滑鼠滑入展開次選單*/
+	    display: block;
+	    opacity: 1;
+	    transition: opacity .2s;
+    }
+}
+
+
+
+
+header > .header-inner > .nav a.sayhi > span.sayhi-inner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header > .header-inner > .nav a.sayhi > span.sayhi-inner > span{
+	font-size: 10px;
+}
+
+header > .header-inner > .nav a.sayhi > span.sayhi-inner > img{
+	width: 25px;
+	vertical-align: top;
+	padding-top: 10px;
+}
+header > .header-inner > .nav a.sayhi > span.nav-line{
+	content: '';
+	display: block;
+	clear: both;
+	border-bottom: 5px solid #73C92D;
+	position: relative;
+	top: 17px;
+	left: 0;
+}

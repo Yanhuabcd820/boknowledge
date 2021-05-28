@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iDesign</title>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header-know.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/boknowledge.css">
+	<link rel="stylesheet" href="css/dcf-responsive-table.css">
+	
+
+</head>
+<body id="menu-cover">
+	<header>
+		<div class="header-inner">
+			<div class="header-left">
+				<div class="logo" onclick="location.href='iDesign.html';" style="cursor:pointer;"><img src="images/BOKNOWLEDGE.svg"></div>
+				<label>
+					<input type="checkbox" class="chk" name="" id="">
+					<span class="box" >
+						<span class="btn"></span><!-- <span class="btn2"> --></span>
+					</span>
+				</label>
+				<a href="javascript:;">登出</a>
+			</div>
+			<input type="checkbox" name="" id="menu-control">
+			<label class="hb" for="menu-control">
+				<span class="bar bar1"></span>
+				<span class="bar bar2"></span>
+				<span class="bar bar3"></span>
+			</label>
+			<ul class="nav">
+				<li><a href="iDesign.html">iDesign<span class="nav-line"></span></a></li>
+				<li><a href="resource.html">資源分享<span class="nav-line"></span></a></li>
+				<li><a href="project.html">我的專案<span class="nav-line-on"></span></a></li>
+				<li><a href="customer.html">客戶資料<span class="nav-line"></span></a></li>
+				<li><a href="contractor.html">廠商管理<span class="nav-line"></span></a></li>
+				<li class="nav-layer"><a href="javascript:;">經營管理<span class="nav-line"></span></a>
+					<ul class="nav-layer-bottom">
+						<li><a href="manage-generalExpense.html">支出管理</a></li>
+						<li><a href="manage-staff.html">人員管理</a></li>
+						<li><a href="manage-analysis.html">分析報告</a></li>
+						<li><a href="manage-setting.html">其他設定</a></li>
+					</ul>
+
+				</li>
+				<li>
+					<a href="staff.html" class="sayhi">
+					<span class="sayhi-inner">
+						<span>Hi Jason!</span>
+						<img src="images/hi.svg">
+					</span>
+					<span class="nav-line"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="blank-space-small"></div>
+	<form class="content-leave">
+		<div class="crumb">
+			<a href="project.html">我的專案</a> > <a href="project-review.html">10905001</a> > 編輯專案專案資料
+		</div>
+		<div class="leave-catch">
+			<h4>編輯專案資料</h4><br><br>
+		</div>
+
+		<div class="fill-type">
+			<h4>專案名稱</h4>
+  				<input type="text" name="" id="" value="微軟Surface上市記者會設計執行">
+		</div>
+		
+
+  		<div class="project-review">
+  			<div class="fill-type fill-type-s-left">
+  				<h4>專案號碼</h4>
+  				<input type="text" name="" id="" value="10905001">
+  			</div>
+
+
+  			<div class="fill-type fill-type-s-right">
+  				<h4>開立日期</h4>
+			    <div class="input-group">
+			        <input class="" name="datepicker" id="datepicker">
+			    	<i class="fa fa-calendar" aria-hidden="true"></i>
+			    </div>
+  			</div>
+
+
+
+  			<div class="fill-type">
+  				<h4>客戶名稱</h4>
+  				 <div class="search-expense-person">
+					 <input id="tags" class="search-expense-person-input" type="text" name="search" id="search" placeholder="隨打即找/人員/公司">
+				 </div>
+  			</div>
+
+
+  			<div class="fill-type fill-type-s-left">
+  				<h4>聯繫窗口</h4>
+				<select name="">
+				　<option value="1">劉振崗</option>
+				　<option value="2">138 Jessica</option>
+				　<option value="3">151 Joe</option>
+				　<option value="4">155 Yolanda</option>
+				</select>
+  			</div>
+  			<div class="fill-type fill-type-s-right">
+  				<h4>E-mail</h4>
+  				<input type="email" name="" id="" value="ason.liu@veda.com.tw">
+  			</div>
+
+
+
+  			<div class="fill-type fill-type-s-left">
+  				<h4>聯絡電話</h4>
+  				<input type="tel" name="" id="" value="02-2704-3024">
+  			</div>
+  			<div class="fill-type fill-type-s-right">
+  				<h4>分機</h4>
+  				<input type="text" name="" id="" value="124">
+  			</div>
+
+
+
+  			<div class="fill-type">
+  				<h4>行動電話</h4>
+  				<input type="tel" name="" id="" value="0922-817-167">
+  			</div>
+
+  			<div class="fill-type fill-type-s-left fill-type-s-plus fill-flex-employee-wrap">
+  				<div class="employee-wrap ">
+	  				<h4>負責業務</h4>
+					<select class="employee" name="">
+					　<option value="1">25 Sigur</option>
+					　<option value="2">10 Ism</option>
+					　<option value="3">10 Yanhua</option>
+					</select>
+					<i class="fa fa-plus fa-plus-sales" aria-hidden="true"></i>	
+					<div class="icon-space"></div>
+					<!-- <i class="fa fa-minus fa-minus-sales" aria-hidden="true"></i> -->
+  				</div>
+  			</div>
+
+  			<div class="fill-type fill-type-s-right fill-type-s-plus fill-flex-employee-wrap">
+  				<div class="employee-wrap">
+	  				<h4>負責設計</h4>
+					<select class="employee" name="">
+					　<option value="1">25 Sigur</option>
+					　<option value="2">10 Ism</option>
+					　<option value="3">10 Yanhua</option>
+					</select>
+					<i class="fa fa-plus fa-plus-designer" aria-hidden="true"></i>
+					<div class="icon-space"></div>
+  				</div>
+  			</div>
+
+
+
+  			<div class="fill-type">
+  				<h4>專案分數</h4>
+				<select name="">
+				　<option value="1">1</option>
+				　<option value="2">2</option>
+				　<option value="3">3</option>
+				　<option value="4">4</option>
+				　<option value="5">5</option>
+				　<option value="6">6</option>
+				　<option value="7">7</option>
+				　<option value="8">8</option>
+				　<option value="9">9</option>
+				　<option value="10">10</option>
+				</select>
+  			</div>
+
+
+  		</div>
+  		<div class="project-review-schedule project-review-schedule-noborder">
+ 			<div class="fill-wide">
+ 				<h4><a href="">內容及進度</a></h4>
+ 			</div>
+ 			<textarea class="review-schedule" placeholder="如了才系去官能為體了應，現望件下度分新內一預養再。難大總，亞善中覺變場反時保軍一會求，種美主；手利化品個形同分北，時轉形展，但的打答運自馬用導希面坡點非共安假牛原他，樂長友友位滿水民？的清花開的語！"></textarea>
+  		</div>
+ 
+		<div class="leave-catch">
+			<h4>報價單資訊</h4><br><br>
+		</div>
+		<!-- <h4 class="project-review-name">報價單資訊</h4> -->
+  		<div class="project-review-attention">
+  			<div class="project-review-attention-fill pb-20">
+  				<h4>設計費</h4>
+  				<h5>
+  					<input type="text" name="" id="" value="680,000">
+  				</h5>
+  			</div>
+  			<div class="project-review-attention-fill pb-20">
+	  			<h4>執行費</h4>
+  				<h5>
+  					<input type="text" name="" id="">
+  				</h5>
+  			</div>
+  			<div class="project-review-attention-fill pb-20">
+  				<h4>代理費</h4>
+  				<h5>
+  					<input type="text" name="" id="">
+  				</h5>
+  			</div>
+  		</div>
+  		<div class="project-review mt-50">
+
+  			<div class="project-review-attention-fill no-line ">
+  				<h4>報價單</h4>
+  				<h5>
+  					<input type="file" name="" id="">
+  				</h5>
+  			</div>
+  		</div>
+
+		<div class="project-review-attention-fill-btn">
+			<button>儲存</button>
+			<a href="project-review.html">取消</a>
+		</div>
+
+	</form>
+
+	<footer>
+		<h6>Copyright © 2020 BORNA</h6>
+	</footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<!-- 日期 -->
+	<!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+	<script src="js/bootstrap.js"></script>
+	<script src="js/moment-with-locales.min.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+
+	<script>
+	$(function(){
+	 
+	 $("#datepicker").datetimepicker({
+	  locale: "zh-tw",
+	  ignoreReadonly:true,
+	  format:"YYYY-MM-DD",
+
+	 });
+
+	});
+	</script>
+
+	<!-- 隨打即找 -->
+	<script>
+	$( function() {
+	var availableTags = [
+	  "ActionScript",
+	  "AppleScript",
+	  "Asp",
+	  "BASIC",
+	  "C",
+	  "C++",
+	  "Clojure",
+	  "COBOL",
+	  "ColdFusion",
+	  "Erlang",
+	  "Fortran",
+	  "Groovy",
+	  "Haskell",
+	  "Java",
+	  "JavaScript",
+	  "Lisp",
+	  "Perl",
+	  "PHP",
+	  "Python",
+	  "Ruby",
+	  "Scala",
+	  "Scheme",
+	  "大久",
+	  "大大",
+	  "大小",
+	  "超久",
+	  "小大久",
+	  "頤德",
+	  "安矽思Ansys",
+	  "平安",
+	  "安安",
+	  "安潔莉",
+	];
+	$( "#tags" ).autocomplete({
+	  source: availableTags,
+	  
+	});
+
+	} );
+	</script>
+
+
+<!-- 新增人員+- -->
+<script>
+const fillFlexEmployeeWrap0 = document.querySelectorAll('.fill-flex-employee-wrap')[0]
+const fillFlexEmployeeWrap1 = document.querySelectorAll('.fill-flex-employee-wrap')[1]
+const projectReview = document.querySelector('.project-review')
+
+// 新增業務
+projectReview.addEventListener('click', function addPersnnel(event){
+	if(event.target.matches('.fa-plus-sales')){
+		let div = document.createElement('div')
+		div.className = 'employee-wrap' 
+		div.innerHTML = `
+			<h4></h4>
+		<select class="employee" name="">
+		　<option value="1">25 Sigur</option>
+		　<option value="2">10 Ism</option>
+		　<option value="3">10 Yanhua</option>
+		</select>
+		<i class="fa fa-plus fa-plus-sales" aria-hidden="true"></i>	
+		<i class="fa fa-minus fa-minus-sales" aria-hidden="true"></i>
+		`
+		fillFlexEmployeeWrap0.append(div)
+		console.log(fillFlexEmployeeWrap0.length)
+	}
+	if(event.target.matches('.fa-minus-sales')){
+		console.log(event.target.parentElement)
+		event.target.parentElement.remove()
+	}
+
+
+
+	// 新增設計
+	if(event.target.matches('.fa-plus-designer')){
+		let div = document.createElement('div')
+		div.className = 'employee-wrap' 
+		div.innerHTML = `
+			<h4></h4>
+		<select class="employee" name="">
+		　<option value="1">25 Sigur</option>
+		　<option value="2">10 Ism</option>
+		　<option value="3">10 Yanhua</option>
+		</select>
+		<i class="fa fa-plus fa-plus-designer" aria-hidden="true"></i>	
+		<i class="fa fa-minus fa-minus-designer" aria-hidden="true"></i>
+		`
+		fillFlexEmployeeWrap1.append(div)
+	}
+	if(event.target.matches('.fa-minus-designer')){
+		console.log(event.target.parentElement)
+		event.target.parentElement.remove()
+	}
+})
+</script>
+</body>
+</html>

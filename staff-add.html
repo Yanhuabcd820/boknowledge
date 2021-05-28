@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iDesign</title>
+<!--     <link rel="stylesheet" href="css/awsomeFont-all.css">
+    <script src="js/awsomefont-all.js"></script> -->
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header-know.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/boknowledge.css">
+	<link rel="stylesheet" href="css/dcf-responsive-table.css">
+
+</head>
+
+<body id="menu-cover">
+	<header>
+		<div class="header-inner">
+			<div class="header-left">
+				<div class="logo" onclick="location.href='iDesign.html';" style="cursor:pointer;"><img
+						src="images/BOKNOWLEDGE.svg"></div>
+				<label>
+					<input type="checkbox" class="chk" name="" id="">
+					<span class="box">
+						<span class="btn"></span></span>
+					</span>
+				</label>
+				<a href="javascript:;">登出</a>
+			</div>
+			<input type="checkbox" name="" id="menu-control">
+			<label class="hb" for="menu-control">
+				<span class="bar bar1"></span>
+				<span class="bar bar2"></span>
+				<span class="bar bar3"></span>
+			</label>
+
+			<ul class="nav">
+				<li><a href="iDesign.html">iDesign<span class="nav-line"></span></a></li>
+				<li><a href="resource.html">資源分享<span class="nav-line"></span></a></li>
+				<li><a href="project.html">我的專案<span class="nav-line"></span></a></li>
+				<li><a href="customer.html">客戶資料<span class="nav-line"></span></a></li>
+				<li><a href="contractor.html">廠商管理<span class="nav-line"></span></a></li>
+				<li class="nav-layer"><a href="javascript:;">經營管理<span class="nav-line-on"></span></a>
+					<ul class="nav-layer-bottom">
+						<li><a href="manage-generalExpense.html">支出管理</a></li>
+						<li><a href="manage-staff.html" class="li-picked">人員管理</a></li>
+						<li><a href="manage-analysis.html">分析報告</a></li>
+						<li><a href="manage-setting.html">其他設定</a></li>
+					</ul>
+
+				</li>
+				<li><a href="staff.html" class="sayhi">
+						<!-- <span class="nav-line"> -->
+						<span class="sayhi-inner">
+							<span>Hi Jason!</span>
+							<img src="images/hi.svg">
+						</span>
+						<!-- <span class="nav-line-on"> -->
+						<span class="nav-line"></span>
+					</a>
+				</li>
+			</ul>
+
+
+		</div>
+	</header>
+	<div class="blank-space-small"></div>
+	<div class="content-leave">
+		<div class="crumb">
+			<a href="manage-staff.html">人員管理</a> > 新增人員
+		</div>
+	</div>
+
+
+	<content>
+		<label class="content-left" style="cursor: pointer;">
+			<div class="avatar">
+				<img id="demo" src="images/employee-upload.jpg">
+				<input id="file" type="file">
+				<div class="avatar-size">(上傳尺寸180 x 200px)</div>
+			</div>
+
+		</label>
+		<form class="content-right">
+			<div class="name">
+				<h4>新增人員</h4>
+			</div>
+			<div class="info-1">
+				<div class="info-1-left add">
+					<h3>日期資料</h3>
+
+					<div class="fill-1">
+						<h4>中文姓名</h4>
+						<h5><input type="text" name="" id=""></h5>
+					</div>
+					<div class="fill-2">
+						<h4>英文姓名</h4>
+						<h5><input type="text" name="" id=""></h5>
+					</div>
+					<div class="fill-1">
+						<h4>到職日期</h4>
+						<h5>
+							<div class="input-group">
+								<input class="" name="datepicker" id="datepicker">
+								<i class="far fa-calendar-alt"></i>
+							</div>
+						</h5>
+					</div>
+					<div class="fill-2">
+						<h4>狀態</h4>
+						<h5>
+							<select>
+								<option value="">在職中</option>
+								<option value="">離職</option>
+								<option value="">產假</option>
+								<option value="">留職停薪</option>
+							</select>
+						</h5>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="info-1">
+
+				<div class="info-1-left add">
+					<h3>個人基本資料</h3>
+					<div class="fill-1">
+						<h4>身份證號</h4>
+						<h5><input type="text" name="" id=""></h5>
+					</div>
+					<div class="fill-2">
+						<h4>出生年月日</h4>
+						<h5>
+							<div class="input-group">
+								<input class="" name="datepicker" id="datepicker2">
+								<i class="far fa-calendar-alt"></i>
+							</div>
+						</h5>
+					</div>
+					<div class="fill-1">
+						<h4>聯絡電話</h4>
+						<h5><input type="tel" name="" id=""></h5>
+					</div>
+					<div class="fill-2">
+						<h4>行動電話</h4>
+						<h5><input type="tel" name="" id=""></h5>
+					</div>
+					<div class="fill-1">
+						<h4>私人電郵</h4>
+						<h5><input type="mail" name="" id=""></h5>
+					</div>
+					<div class="fill-2">
+						<h4>地址</h4>
+						<h5><input type="text" name="" id=""></h5>
+					</div>
+
+					<div class="fill-1">
+						<h4>緊急聯絡人</h4>
+						<h5><input type="text" name="" id=""></h5>
+					</div>
+					<div class="fill-2">
+						<h4>聯絡電話</h4>
+						<h5><input type="text" name="" id=""></h5>
+					</div>
+					<div class="fill-1">
+						<h4>關係</h4>
+						<h5><input type="text" name="" id=""></h5>
+					</div>
+					<div class="fill-2">
+						<h4></h4>
+						<h5></h5>
+					</div>
+					<div class="fill-1">
+						<h4>部門</h4>
+						<h5><input type="text" name="" id=""></h5>
+					</div>
+					<div class="fill-2">
+						<h4>職稱</h4>
+						<h5><input type="text" name="" id=""></h5>
+					</div>
+					<div class="fill-1">
+						<h4>公司mail</h4>
+						<h5><input type="text" name="" id=""></h5>
+					</div>
+					<div class="fill-2">
+						<h4>密碼</h4>
+						<h5><input type="text" name="" id=""></h5>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="info-1">
+				<div class="info-1-left add">
+					<h3>薪資紀錄
+                    	<i class="far fa-plus "></i>
+					</h3>
+					<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100% salary">
+						<thead>
+							<tr>
+								<th scope="col" data-label="開始時間">開始時間</th>
+								<th scope="col" data-label="本薪">本薪</th>
+								<th scope="col" data-label="職務加給">職務加給</th>
+								<th scope="col" data-label="合計薪資">合計薪資</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-label="開始時間">
+									<div class="input-group">
+										<input class="" name="datepicker" id="datepicker3">
+										<i class="far fa-calendar-alt"></i>
+									</div>
+								</td>
+								<td data-label="本薪"><input type="text"></td>
+								<td data-label="職務加給"><input type="text"></td>
+								<td data-label="合計薪資"><input type="text"></td>
+							</tr>
+							<!-- 							<tr>
+								<td data-label="開始時間">
+									<div class="input-group">
+								        <input class="" name="datepicker" id="datepicker4">
+								    	<i class="fa fa-calendar" aria-hidden="true"></i>
+									</div>
+								</td>
+								<td data-label="本薪"><input type="text"></td>
+								<td data-label="職務加給"><input type="text"></td>
+								<td data-label="合計薪資"><input type="text"></td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<script>
+
+				const tbody = document.querySelector('tbody')
+				const addForm = document.querySelector('.fa-plus')
+				addForm.addEventListener('click', function () {
+
+					let tr = document.createElement('tr')
+					tr.innerHTML = `
+						<td data-label="開始時間">
+							<div class="input-group">
+						        <input class="" name="datepicker" id="datepicker3">
+						    	<i class="far fa-calendar-alt"></i>
+							</div>
+						</td>
+						<td data-label="本薪"><input type="text"></td>
+						<td data-label="職務加給"><input type="text"></td>
+						<td data-label="合計薪資"><input type="text"></td>
+						`
+					tbody.append(tr)
+				})
+
+			</script>
+
+
+
+
+			<div class="project-review-attention-fill-btn">
+				<button>儲存</button>
+				<a href="staff.html">取消</a>
+			</div>
+
+
+		</form>
+
+	</content>
+
+	<footer>
+		<h6>Copyright © 2020 BORNA</h6>
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/moment-with-locales.min.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+
+	<script>
+		$(function () {
+			$("#datepicker").datetimepicker({
+				locale: "zh-tw",
+				ignoreReadonly: true,
+				format: "YYYY-MM-DD",
+			});
+			$("#datepicker2").datetimepicker({
+				locale: "zh-tw",
+				ignoreReadonly: true,
+				format: "YYYY-MM-DD",
+			});
+			$("#datepicker3").datetimepicker({
+				locale: "zh-tw",
+				ignoreReadonly: true,
+				format: "YYYY-MM-DD",
+			});
+		});
+	</script>
+
+	<!-- 大頭照 -->
+	<script type="text/javascript">
+		$('#file').change(function () {
+			var file = $('#file')[0].files[0];
+			var reader = new FileReader;
+			reader.onload = function (e) {
+				$('#demo').attr('src', e.target.result);
+			};
+			reader.readAsDataURL(file);
+		});
+	</script>
+</body>
+
+</html>

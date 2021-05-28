@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iDesign</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header-know.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/dcf-responsive-table.css">
+
+</head>
+
+<body id="menu-cover">
+	<header>
+		<div class="header-inner">
+			<div class="header-left">
+				<div class="logo" onclick="location.href='iDesign.html';" style="cursor:pointer;"><img
+						src="images/BOKNOWLEDGE.svg"></div>
+				<label>
+					<input type="checkbox" class="chk" name="" id="">
+					<span class="box">
+						<span class="btn"></span><!-- <span class="btn2"> --></span>
+					</span>
+				</label>
+				<a href="javascript:;">登出</a>
+			</div>
+			<input type="checkbox" name="" id="menu-control">
+			<label class="hb" for="menu-control">
+				<span class="bar bar1"></span>
+				<span class="bar bar2"></span>
+				<span class="bar bar3"></span>
+			</label>
+			<ul class="nav">
+				<li><a href="iDesign.html">iDesign<span class="nav-line"></span></a></li>
+				<li><a href="resource.html">資源分享<span class="nav-line"></span></a></li>
+				<li><a href="project.html">我的專案<span class="nav-line"></span></a></li>
+				<li><a href="customer.html">客戶資料<span class="nav-line"></span></a></li>
+				<li><a href="contractor.html">廠商管理<span class="nav-line"></span></a></li>
+				<li class="nav-layer"><a href="javascript:;">經營管理<span class="nav-line-on"></span></a>
+					<ul class="nav-layer-bottom">
+						<li><a href="manage-generalExpense.html">支出管理</a></li>
+						<li><a href="manage-staff.html">人員管理</a></li>
+						<li><a href="manage-analysis.html" class="li-picked">分析報告</a></li>
+						<li><a href="manage-setting.html">其他設定</a></li>
+					</ul>
+
+				</li>
+				<li><a href="staff.html" class="sayhi">
+						<span class="sayhi-inner">
+							<span>Hi Jason!</span>
+							<img src="images/hi.svg">
+						</span>
+						<span class="nav-line"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="blank-space-small-small"></div>
+
+	<div class="search">
+        <label class="search-input" for="search-keyword-text">
+            <div class="search-keyword-pick-wrap">
+                <input type="text" class="search-keyword-text" id="search-keyword-text" name="search-keyword-text" placeholder="請點選下方關鍵字或自行輸入...">
+            </div>
+        </label>
+        <button class="btn-search">
+            <i class="far fa-search"></i>
+        </button>
+	</div>
+	<div class="content-leave content-leave-wide">
+
+		<div class="leave-catch">
+			<h4>分析報告</h4>
+		</div>
+
+		<div class="choice-date">
+
+			<form>
+				<select name="YourLocation">
+					　<option value="2021">2021</option>
+					　<option value="2020">2020</option>
+					　<option value="2019">2019</option>
+					　<option value="2018">2018</option>
+					　<option value="2017">2017</option>
+					　<option value="2016">2016</option>
+					　<option value="2015">2015</option>
+				</select>
+				<!-- 				<div class="choice-date-button">
+					<button  onclick="location.href='iDesign-add.html';" style="cursor:pointer;" class="pick">全年度</button>
+					<button  onclick="location.href='iDesign-add.html';" style="cursor:pointer;"><a href="manage-analysis-202001.html">一月</a></button>
+					<button  onclick="location.href='iDesign-add.html';" style="cursor:pointer;">123月</button>
+					<button  onclick="location.href='iDesign-add.html';" style="cursor:pointer;">三月</button>
+					<button  onclick="location.href='iDesign-add.html';" style="cursor:pointer;">四月</button>
+					<button  onclick="location.href='iDesign-add.html';" style="cursor:pointer;">五月</button>
+					<button  onclick="location.href='iDesign-add.html';" style="cursor:pointer;">六月</button>
+					<button  onclick="location.href='iDesign-add.html';" style="cursor:pointer;">七月</button>
+					<button  onclick="location.href='iDesign-add.html';" style="cursor:pointer;">八月</button>
+					<button  onclick="location.href='iDesign-add.html';" style="cursor:pointer;">九月</button>
+					<button  onclick="location.href='iDesign-add.html';" style="cursor:pointer;">十月</button>
+					<button  onclick="location.href='iDesign-add.html';" style="cursor:pointer;">十一月</button>
+					<button  onclick="location.href='iDesign-add.html';" style="cursor:pointer;">十二月</button>
+				</div> -->
+			</form><br><br>
+		</div>
+		<div class="leave-catch">
+			<h5>今天是 2020年10月28日</h5>
+		</div>
+
+
+		<div class="page-amount">
+			<div>專案總金額：1,680,000</div>
+			<div>專案支出：680,000</div>
+			<div>專案利潤：1,000,000</div>
+		</div>
+
+		<br><br>
+		<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100% analystics-table">
+			<thead>
+				<tr>
+					<th scope="col" data-label="月份">月份</th>
+					<th scope="col" data-label="營業額">營業額</th>
+					<th scope="col" data-label="專案支出">專案支出</th>
+					<th scope="col" data-label="稅金支出">稅金支出</th>
+					<th scope="col" data-label="人事行政">人事行政</th>
+					<th scope="col" data-label="場所費用">場所費用</th>
+					<th scope="col" data-label="各項雜支">各項雜支</th>
+					<th scope="col" data-label="折舊攤提">折舊攤提</th>
+					<th scope="col" data-label="利潤">利潤</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-label="月份">一月</th>
+					<td data-label="營業額">1680,000,000</th>
+					<td data-label="專案支出">1680,000,000</th>
+					<td data-label="稅金支出">1,680,000</th>
+					<td data-label="人事行政">1,680,000</th>
+					<td data-label="場所費用">1,680,000</th>
+					<td data-label="各項雜支">1,680,000</th>
+					<td data-label="折舊攤提">1,680,000</th>
+					<td data-label="利潤">1,680,000</th>
+				</tr>
+
+				<tr>
+					<td data-label="月份">二月</th>
+					<td data-label="營業額">1680,000,000</th>
+					<td data-label="專案支出">1680,000,000</th>
+					<td data-label="稅金支出">1,680,000</th>
+					<td data-label="人事行政">1,680,000</th>
+					<td data-label="場所費用">1,680,000</th>
+					<td data-label="各項雜支">1,680,000</th>
+					<td data-label="折舊攤提">1,680,000</th>
+					<td data-label="利潤">1,680,000</th>
+				</tr>
+
+				<tr>
+					<td data-label="月份">三月</th>
+					<td data-label="營業額">1680,000,000</th>
+					<td data-label="專案支出">1680,000,000</th>
+					<td data-label="稅金支出">1,680,000</th>
+					<td data-label="人事行政">1,680,000</th>
+					<td data-label="場所費用">1,680,000</th>
+					<td data-label="各項雜支">1,680,000</th>
+					<td data-label="折舊攤提">1,680,000</th>
+					<td data-label="利潤">1,680,000</th>
+				</tr>
+				<tr>
+					<td data-label="月份">四月</th>
+					<td data-label="營業額">1680,000,000</th>
+					<td data-label="專案支出">1680,000,000</th>
+					<td data-label="稅金支出">1,680,000</th>
+					<td data-label="人事行政">1,680,000</th>
+					<td data-label="場所費用">1,680,000</th>
+					<td data-label="各項雜支">1,680,000</th>
+					<td data-label="折舊攤提">1,680,000</th>
+					<td data-label="利潤">1,680,000</th>
+				</tr>
+				<tr>
+					<td data-label="月份">五月</th>
+					<td data-label="營業額">1680,000,000</th>
+					<td data-label="專案支出">1680,000,000</th>
+					<td data-label="稅金支出">1,680,000</th>
+					<td data-label="人事行政">1,680,000</th>
+					<td data-label="場所費用">1,680,000</th>
+					<td data-label="各項雜支">1,680,000</th>
+					<td data-label="折舊攤提">1,680,000</th>
+					<td data-label="利潤">1,680,000</th>
+				</tr>
+				<tr>
+					<td data-label="月份">六月</th>
+					<td data-label="營業額">1680,000,000</th>
+					<td data-label="專案支出">1680,000,000</th>
+					<td data-label="稅金支出">1,680,000</th>
+					<td data-label="人事行政">1,680,000</th>
+					<td data-label="場所費用">1,680,000</th>
+					<td data-label="各項雜支">1,680,000</th>
+					<td data-label="折舊攤提">1,680,000</th>
+					<td data-label="利潤">1,680,000</th>
+				</tr>
+				<tr>
+					<td data-label="月份">七月</th>
+					<td data-label="營業額">1680,000,000</th>
+					<td data-label="專案支出">1680,000,000</th>
+					<td data-label="稅金支出">1,680,000</th>
+					<td data-label="人事行政">1,680,000</th>
+					<td data-label="場所費用">1,680,000</th>
+					<td data-label="各項雜支">1,680,000</th>
+					<td data-label="折舊攤提">1,680,000</th>
+					<td data-label="利潤">1,680,000</th>
+				</tr>
+				<tr>
+					<td data-label="月份">八月</th>
+					<td data-label="營業額">1680,000,000</th>
+					<td data-label="專案支出">1680,000,000</th>
+					<td data-label="稅金支出">1,680,000</th>
+					<td data-label="人事行政">1,680,000</th>
+					<td data-label="場所費用">1,680,000</th>
+					<td data-label="各項雜支">1,680,000</th>
+					<td data-label="折舊攤提">1,680,000</th>
+					<td data-label="利潤">1,680,000</th>
+				</tr>
+				<tr>
+					<td data-label="月份">九月</th>
+					<td data-label="營業額">1680,000,000</th>
+					<td data-label="專案支出">1680,000,000</th>
+					<td data-label="稅金支出">1,680,000</th>
+					<td data-label="人事行政">1,680,000</th>
+					<td data-label="場所費用">1,680,000</th>
+					<td data-label="各項雜支">1,680,000</th>
+					<td data-label="折舊攤提">1,680,000</th>
+					<td data-label="利潤">1,680,000</th>
+				</tr>
+				<tr>
+					<td data-label="月份">十月</th>
+					<td data-label="營業額">1680,000,000</th>
+					<td data-label="專案支出">1680,000,000</th>
+					<td data-label="稅金支出">1,680,000</th>
+					<td data-label="人事行政">1,680,000</th>
+					<td data-label="場所費用">1,680,000</th>
+					<td data-label="各項雜支">1,680,000</th>
+					<td data-label="折舊攤提">1,680,000</th>
+					<td data-label="利潤">1,680,000</th>
+				</tr>
+				<tr>
+					<td data-label="月份">十一月</th>
+					<td data-label="營業額">1680,000,000</th>
+					<td data-label="專案支出">1680,000,000</th>
+					<td data-label="稅金支出">1,680,000</th>
+					<td data-label="人事行政">1,680,000</th>
+					<td data-label="場所費用">1,680,000</th>
+					<td data-label="各項雜支">1,680,000</th>
+					<td data-label="折舊攤提">1,680,000</th>
+					<td data-label="利潤">1,680,000</th>
+				</tr>
+				<tr>
+					<td data-label="月份">十二月</th>
+					<td data-label="營業額">1680,000,000</th>
+					<td data-label="專案支出">1680,000,000</th>
+					<td data-label="稅金支出">1,680,000</th>
+					<td data-label="人事行政">1,680,000</th>
+					<td data-label="場所費用">1,680,000</th>
+					<td data-label="各項雜支">1,680,000</th>
+					<td data-label="折舊攤提">1,680,000</th>
+					<td data-label="利潤">1,680,000</th>
+				</tr>
+				<tr>
+					<td data-label="月份">小計</th>
+					<td data-label="營業額">12,680,000,000</th>
+					<td data-label="專案支出">12,680,000,000</th>
+					<td data-label="稅金支出">12,680,000,000,680,000</th>
+					<td data-label="人事行政">1,680,000,000,680,000</th>
+					<td data-label="場所費用">12,680,000</th>
+					<td data-label="各項雜支">12,680,000</th>
+					<td data-label="折舊攤提">12,680,000</th>
+					<td data-label="利潤">12,680,000</th>
+				</tr>
+
+
+
+			</tbody>
+		</table>
+
+
+		<div class="analystic-chart">
+			<br><br>
+			<!-- <img src="images/analystucs-chart.jpg"  onclick="location.href='javascript:;';" style="cursor:pointer;"> -->
+			<canvas id="myChart"></canvas>
+		</div>
+
+	</div>
+
+	<footer>
+		<h6>Copyright © 2020 BORNA</h6>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+		var ctx = document.getElementById('myChart').getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'pie',
+			data: {
+				labels: ['專案支出', '稅金支出', '人事行政', '場所費用', '各項雜支', '折舊攤提', '利潤比'],
+				datasets: [{
+					label: '# of Votes',
+					data: [12, 19, 3, 5, 2, 3, 5],
+					backgroundColor: [
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(255, 206, 86, 0.2)',
+						'rgba(75, 192, 192, 0.2)',
+						'rgba(153, 102, 255, 0.2)',
+						'rgba(255, 159, 64, 0.2)',
+						'rgba(50, 168, 50, 0.2)'
+					],
+					borderColor: [
+						'rgba(255, 99, 132, 1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+						'rgba(153, 102, 255, 1)',
+						'rgba(255, 159, 64, 1)',
+						'rgba(50, 168, 50, 1)'
+					],
+					borderWidth: 1
+				}]
+			},
+			options: {
+				// scales: {
+				//     y: {
+				//         beginAtZero: true
+				//     }
+				// }
+			}
+		});
+	</script>
+</body>
+
+</html>

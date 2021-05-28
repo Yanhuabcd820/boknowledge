@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iDesign</title>
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header-know.css">
+	<link rel="stylesheet" href="css/style.css"><!-- 
+	<link rel="stylesheet" href="css/dcf-responsive-table.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+ -->
+</head>
+
+<body id="menu-cover">
+	<header>
+		<div class="header-inner">
+			<div class="header-left">
+				<div class="logo" onclick="location.href='iDesign.html';" style="cursor:pointer;"><img
+						src="images/BOKNOWLEDGE.svg"></div>
+				<label>
+					<input type="checkbox" class="chk" name="" id="">
+					<span class="box">
+						<span class="btn"></span><!-- <span class="btn2"> --></span>
+					</span>
+				</label>
+				<a href="javascript:;">登出</a>
+			</div>
+			<input type="checkbox" name="" id="menu-control">
+			<label class="hb" for="menu-control">
+				<span class="bar bar1"></span>
+				<span class="bar bar2"></span>
+				<span class="bar bar3"></span>
+			</label>
+			<ul class="nav">
+				<li><a href="iDesign.html">iDesign<span class="nav-line"></span></a></li>
+				<li><a href="resource.html">資源分享<span class="nav-line"></span></a></li>
+				<li><a href="project.html">我的專案<span class="nav-line"></span></a></li>
+				<li><a href="customer.html">客戶資料<span class="nav-line"></span></a></li>
+				<li><a href="contractor.html">廠商管理<span class="nav-line"></span></a></li>
+				<li class="nav-layer"><a href="javascript:;">經營管理<span class="nav-line-on"></span></a>
+					<ul class="nav-layer-bottom">
+						<li><a href="manage-generalExpense.html" class="li-picked">支出管理</a></li>
+						<li><a href="manage-staff.html">人員管理</a></li>
+						<li><a href="manage-analysis.html">分析報告</a></li>
+						<li><a href="manage-setting.html">其他設定</a></li>
+					</ul>
+
+				</li>
+				<li><a href="staff.html" class="sayhi">
+						<span class="sayhi-inner">
+							<span>Hi Jason!</span>
+							<img src="images/hi.svg">
+						</span>
+						<span class="nav-line"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="blank"></div>
+
+	<div class="search-out">
+		<div class="search">
+			<input type="text" name="" id="" placeholder="請輸入關鍵字...">
+			<div class="btn-search" onclick="location.href='javascript:;';" style="cursor:pointer;">
+				<img src="images/btn-search.svg">
+			</div>
+			<!-- 			<div class="btn-add" onclick="location.href='manage-generalExpense-add.html';" style="cursor:pointer;"></div>  -->
+		</div>
+	</div>
+	<div class="content-leave content-leave-wide">
+
+		<div class="leave-catch">
+			<h4>支出管理
+				<a href="manage-projectExpense-add.html">
+					<i class="far fa-plus "></i>
+				</a>
+			</h4>
+		</div>
+
+		<div class="choice-date">
+
+			<form>
+				<select name="project-year">
+					　<option value="2021">2021</option>
+					　<option value="2020">2020</option>
+					　<option value="2019">2019</option>
+					　<option value="2018">2018</option>
+					　<option value="2017">2017</option>
+					　<option value="2016">2016</option>
+					　<option value="2015">2015</option>
+				</select>
+				<select name="project-month">
+					　<option value="All">全年度</option>
+					　<option value="Jan">一月</option>
+					　<option value="Feb">二月</option>
+					　<option value="Mar">三月</option>
+					　<option value="Apr">四月</option>
+					　<option value="May">五月</option>
+					　<option value="Jun">六月</option>
+					　<option value="July">七月</option>
+					　<option value="Aug">八月</option>
+					　<option value="Sep">九月</option>
+					　<option value="Oct">十月</option>
+					　<option value="Nov">十一月</option>
+					　<option value="Sep">十二月</option>
+				</select>
+			</form>
+		</div>
+
+
+
+		<div class="page-amount">
+			<div></div>
+			<div>支出總計：680,000</div>
+			<div></div>
+		</div>
+
+		<br><br>
+
+
+		<div class="leave-catch no-line">
+			<h4>專案支出 - <span>??/??/??</span></h4>
+		</div>
+		<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100% analystics-table">
+			<thead>
+				<tr>
+					<th scope="col" data-label="支付對象">支付對象</th>
+					<th scope="col" data-label="摘要">摘要</th>
+					<th scope="col" data-label="含稅金額">含稅金額</th>
+					<th scope="col" data-label="日期">日期</th>
+					<th scope="col" data-label="申請人員">申請人員</th>
+					<th scope="col" data-label="發票號碼">發票號碼</th>
+					<th scope="col" data-label="支出單號">支出單號</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-label="支付對象">極電</th>
+					<td data-label="摘要">21寸iMac(2/24期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">伯誠空間</th>
+					<td data-label="摘要">辦公室裝潢(15/60期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">極電</th>
+					<td data-label="摘要">21寸iMac(2/24期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">伯誠空間</th>
+					<td data-label="摘要">辦公室裝潢(15/60期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">極電</th>
+					<td data-label="摘要">21寸iMac(2/24期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<div class="page-amount no-space">
+			<div></div>
+			<div>支出小計：80,000</div>
+			<div></div>
+		</div>
+		<br><br><br><br>
+
+		<div class="leave-catch no-line">
+			<h4>稅金支出 - <span>會計費用/5%營業稅金/年度所得稅</span></h4>
+		</div>
+		<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100% analystics-table">
+			<thead>
+				<tr>
+					<th scope="col" data-label="支付對象">支付對象</th>
+					<th scope="col" data-label="摘要">摘要</th>
+					<th scope="col" data-label="含稅金額">含稅金額</th>
+					<th scope="col" data-label="日期">日期</th>
+					<th scope="col" data-label="申請人員">申請人員</th>
+					<th scope="col" data-label="發票號碼">發票號碼</th>
+					<th scope="col" data-label="支出單號">支出單號</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-label="支付對象">極電</th>
+					<td data-label="摘要">21寸iMac(2/24期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">伯誠空間</th>
+					<td data-label="摘要">辦公室裝潢(15/60期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">極電</th>
+					<td data-label="摘要">21寸iMac(2/24期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">伯誠空間</th>
+					<td data-label="摘要">辦公室裝潢(15/60期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">極電</th>
+					<td data-label="摘要">21寸iMac(2/24期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<div class="page-amount no-space">
+			<div></div>
+			<div>支出小計：80,000</div>
+			<div></div>
+		</div>
+		<br><br><br><br>
+		<div class="leave-catch no-line">
+			<h4>人事費用 - <span>人員薪資/勞健保/勞退/教育費用/增援廣告(104刊登)</span></h4>
+		</div>
+		<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100% analystics-table">
+			<thead>
+				<tr>
+					<th scope="col" data-label="支付對象">支付對象</th>
+					<th scope="col" data-label="摘要">摘要</th>
+					<th scope="col" data-label="含稅金額">含稅金額</th>
+					<th scope="col" data-label="日期">日期</th>
+					<th scope="col" data-label="申請人員">申請人員</th>
+					<th scope="col" data-label="發票號碼">發票號碼</th>
+					<th scope="col" data-label="支出單號">支出單號</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-label="支付對象">極電</th>
+					<td data-label="摘要">21寸iMac(2/24期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">伯誠空間</th>
+					<td data-label="摘要">辦公室裝潢(15/60期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">極電</th>
+					<td data-label="摘要">21寸iMac(2/24期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">伯誠空間</th>
+					<td data-label="摘要">辦公室裝潢(15/60期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">極電</th>
+					<td data-label="摘要">21寸iMac(2/24期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<div class="page-amount no-space">
+			<div></div>
+			<div>支出小計：80,000</div>
+			<div></div>
+		</div>
+		<br><br><br><br>
+		<div class="leave-catch no-line">
+			<h4>場所費用 - <span>辦公室租金/水電/有線電視/設備攤提等</span></h4>
+		</div>
+		<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100% analystics-table">
+			<thead>
+				<tr>
+					<th scope="col" data-label="支付對象">支付對象</th>
+					<th scope="col" data-label="摘要">摘要</th>
+					<th scope="col" data-label="含稅金額">含稅金額</th>
+					<th scope="col" data-label="日期">日期</th>
+					<th scope="col" data-label="申請人員">申請人員</th>
+					<th scope="col" data-label="發票號碼">發票號碼</th>
+					<th scope="col" data-label="支出單號">支出單號</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-label="支付對象">極電</th>
+					<td data-label="摘要">21寸iMac(2/24期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">伯誠空間</th>
+					<td data-label="摘要">辦公室裝潢(15/60期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="page-amount no-space">
+			<div></div>
+			<div>支出小計：80,000</div>
+			<div></div>
+		</div>
+		<br><br><br><br>
+		<div class="leave-catch no-line">
+			<h4>各項雜支 - <span>電話費/影印機、紙事務費/衛生紙等消耗品</span></h4>
+		</div>
+		<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100% analystics-table">
+			<thead>
+				<tr>
+					<th scope="col" data-label="支付對象">支付對象</th>
+					<th scope="col" data-label="摘要">摘要</th>
+					<th scope="col" data-label="含稅金額">含稅金額</th>
+					<th scope="col" data-label="日期">日期</th>
+					<th scope="col" data-label="申請人員">申請人員</th>
+					<th scope="col" data-label="發票號碼">發票號碼</th>
+					<th scope="col" data-label="支出單號">支出單號</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-label="支付對象">極電</th>
+					<td data-label="摘要">21寸iMac(2/24期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">伯誠空間</th>
+					<td data-label="摘要">辦公室裝潢(15/60期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="page-amount no-space">
+			<div></div>
+			<div>支出小計：80,000</div>
+			<div></div>
+		</div>
+		<br><br><br><br>
+		<div class="leave-catch no-line">
+			<h4>折舊攤提 - <span>設備採購/裝潢/硬體更新</span></h4>
+		</div>
+		<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100% analystics-table">
+			<thead>
+				<tr>
+					<th scope="col" data-label="支付對象">支付對象</th>
+					<th scope="col" data-label="摘要">摘要</th>
+					<th scope="col" data-label="含稅金額">含稅金額</th>
+					<th scope="col" data-label="日期">日期</th>
+					<th scope="col" data-label="申請人員">申請人員</th>
+					<th scope="col" data-label="發票號碼">發票號碼</th>
+					<th scope="col" data-label="支出單號">支出單號</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-label="支付對象">極電</th>
+					<td data-label="摘要">21寸iMac(2/24期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+				<tr>
+					<td data-label="支付對象">伯誠空間</th>
+					<td data-label="摘要">辦公室裝潢(15/60期)</th>
+					<td data-label="含稅金額">115,000</th>
+					<td data-label="支出日期">2020/10/31</th>
+					<td data-label="申請人員">Ryan Liu</th>
+					<td data-label="發票號碼">NT16871687</th>
+					<td data-label="支出單號">11000005</th>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="page-amount no-space">
+			<div></div>
+			<div>支出小計：80,000</div>
+			<div></div>
+		</div>
+
+
+	</div>
+
+	<footer>
+		<h6>Copyright © 2020 BORNA</h6>
+	</footer>
+</body>
+
+</html>

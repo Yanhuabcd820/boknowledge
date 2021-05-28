@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iDesign</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header-know.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/dcf-responsive-table.css">
+</head>
+
+<body id="menu-cover">
+	<header>
+		<div class="header-inner">
+			<div class="header-left">
+				<div class="logo" onclick="location.href='iDesign.html';" style="cursor:pointer;"><img src="images/BOKNOWLEDGE.svg"></div>
+				<label>
+					<input type="checkbox" class="chk" name="" id="">
+					<span class="box">
+						<span class="btn"></span><!-- <span class="btn2"> --></span>
+					</span>
+				</label>
+				<a href="javascript:;">登出</a>
+			</div>
+			<input type="checkbox" name="" id="menu-control">
+			<label class="hb" for="menu-control">
+				<span class="bar bar1"></span>
+				<span class="bar bar2"></span>
+				<span class="bar bar3"></span>
+			</label>
+			<ul class="nav">
+				<li><a href="iDesign.html">iDesign<span class="nav-line"></span></a></li>
+				<li><a href="resource.html">資源分享<span class="nav-line"></span></a></li>
+				<li><a href="project.html">我的專案<span class="nav-line-on"></span></a></li>
+				<li><a href="customer.html">客戶資料<span class="nav-line"></span></a></li>
+				<li><a href="contractor.html">廠商管理<span class="nav-line"></span></a></li>
+				<li class="nav-layer"><a href="javascript:;">經營管理<span class="nav-line"></span></a>
+					<ul class="nav-layer-bottom">
+						<li><a href="manage-generalExpense.html">支出管理</a></li>
+						<li><a href="manage-staff.html">人員管理</a></li>
+						<li><a href="manage-analysis.html">分析報告</a></li>
+						<li><a href="manage-setting.html">其他設定</a></li>
+					</ul>
+
+				</li>
+				<li><a href="staff.html" class="sayhi">
+						<!-- <span class="nav-line"> -->
+						<span class="sayhi-inner">
+							<span>Hi Jason!</span>
+							<img src="images/hi.svg">
+						</span>
+						<!-- <span class="nav-line-on"> -->
+						<span class="nav-line"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="blank"></div>
+
+	<div class="search-out">
+		<form class="search">
+			<input type="text" name="" id="" placeholder="輸入專案名稱、號碼、材質或內容等...">
+			<button class="btn-search">
+                <i class="far fa-search"></i>
+			</button>
+		</form>
+	</div>
+	<div class="content-leave content-leave-wide">
+		<div class="leave-catch">
+			<h4>我的專案
+				<a href="project-add.html">
+                    <i class="far fa-plus "></i>
+                </a>
+			</h4>
+		</div>
+
+		<div class="choice-date">
+
+			<form>
+				<select name="project-year">
+					　<option value="2021">2021</option>
+					　<option value="2020">2020</option>
+					　<option value="2019">2019</option>
+					　<option value="2018">2018</option>
+					　<option value="2017">2017</option>
+					　<option value="2016">2016</option>
+					　<option value="2015">2015</option>
+				</select>
+				<select name="project-month">
+					　<option value="All">全年度</option>
+					　<option value="Jan">一月</option>
+					　<option value="Feb">二月</option>
+					　<option value="Mar">三月</option>
+					　<option value="Apr">四月</option>
+					　<option value="May">五月</option>
+					　<option value="Jun">六月</option>
+					　<option value="July">七月</option>
+					　<option value="Aug">八月</option>
+					　<option value="Sep">九月</option>
+					　<option value="Oct">十月</option>
+					　<option value="Nov">十一月</option>
+					　<option value="Sep">十二月</option>
+				</select>
+				<select name="project-statue">
+					　<option value="project-doing">進行中的專案</option>
+					　<option value="project-all">全部專案</option>
+				</select>
+<!-- 				<div class="choice-date-button">
+					<button onclick="location.href='iDesign-add.html';" style="cursor:pointer;" class="pick">全年度</button>
+					<button onclick="location.href='iDesign-add.html';" style="cursor:pointer;">一月</button>
+					<button onclick="location.href='iDesign-add.html';" style="cursor:pointer;">二月</button>
+					<button onclick="location.href='iDesign-add.html';" style="cursor:pointer;">三月</button>
+					<button onclick="location.href='iDesign-add.html';" style="cursor:pointer;">四月</button>
+					<button onclick="location.href='iDesign-add.html';" style="cursor:pointer;">五月</button>
+					<button onclick="location.href='iDesign-add.html';" style="cursor:pointer;">六月</button>
+					<button onclick="location.href='iDesign-add.html';" style="cursor:pointer;">七月</button>
+					<button onclick="location.href='iDesign-add.html';" style="cursor:pointer;">八月</button>
+					<button onclick="location.href='iDesign-add.html';" style="cursor:pointer;">九月</button>
+					<button onclick="location.href='iDesign-add.html';" style="cursor:pointer;">十月</button>
+					<button onclick="location.href='iDesign-add.html';" style="cursor:pointer;">十一月</button>
+					<button onclick="location.href='iDesign-add.html';" style="cursor:pointer;">十二月</button>
+				</div> -->
+			</form>
+
+
+		</div>
+
+
+		<table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100% project-table">
+			<thead>
+				<tr>
+					<th scope="col" data-label="專案號碼">專案號碼</th>
+					<th scope="col" data-label="客戶">客戶</th>
+					<th scope="col" data-label="專案名稱">專案名稱</th>
+					<th scope="col" data-label="業務">業務</th>
+					<th scope="col" data-label="設計">設計</th>
+					<th scope="col" data-label="內容及進度">內容及進度</th>
+					<th scope="col" data-label="總金額">總金額</th>
+					<th scope="col" data-label="狀態">狀態</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-label="專案號碼"><a href="project-review.html">10905001</a></td>
+					<td data-label="客戶"><a href="customer-review.html">大久久空間</a></td>
+					<td data-label="專案名稱"><a href="project-review.html">Azure ExpressRoute專線服務正式在台推出記者會</a></td>
+					<td data-label="業務">Jason Lin</td>
+					<td data-label="設計">黃 彥華</td>
+					<td data-label="內容及進度">持續追蹤</td>
+					<td data-label="總金額">968,900</td>
+					<td data-label="狀態">
+						<div class="state state-end"></div>
+					</td>
+				</tr>
+				<tr>
+					<td data-label="專案號碼"><a href="project-review.html">10905001</a></td>
+					<td data-label="客戶"><a href="customer-review.html">大久久空間</a></td>
+					<td data-label="專案名稱"><a href="project-review.html">Azure ExpressRoute專線服務正式在台推出記者會</a></td>
+					<td data-label="業務">Ryan Liu</td>
+					<td data-label="設計">黃 彥華</td>
+					<td data-label="內容及進度">等待客戶回覆</td>
+					<td data-label="總金額">168,900</td>
+					<td data-label="狀態">
+						<div class="state state-end"></div>
+					</td>
+				</tr>
+				<tr>
+					<td data-label="專案號碼"><a href="project-review.html">10905001</a></td>
+					<td data-label="客戶"><a href="customer-review.html">大久久空間</a></td>
+					<td data-label="專案名稱"><a href="project-review.html">Azure ExpressRoute專線服務正式在台推出記者會</a></td>
+					<td data-label="業務">Ryan Liu</td>
+					<td data-label="設計">黃 彥華</td>
+					<td data-label="內容及進度">預計本週五結案</td>
+					<td data-label="總金額">168,900</td>
+					<td data-label="狀態">
+						<div class="state state-stop"></div>
+					</td>
+				</tr>
+				<tr>
+					<td data-label="專案號碼">10905001</td>
+					<td data-label="客戶">大久久空間</td>
+					<td data-label="專案名稱">Azure ExpressRoute專線服務正式在台推出記者會</td>
+					<td data-label="業務">Ryan Liu</td>
+					<td data-label="設計">黃 彥華</td>
+					<td data-label="內容及進度">完稿中</td>
+					<td data-label="總金額">168,900</td>
+					<td data-label="狀態">
+						<div class="state state-proceed"></div>
+					</td>
+				</tr>
+				<tr>
+					<td data-label="專案號碼">10905001</td>
+					<td data-label="客戶">大久久空間</td>
+					<td data-label="專案名稱">Azure ExpressRoute專線服務正式在台推出記者會</td>
+					<td data-label="業務">Ryan Liu</td>
+					<td data-label="設計">黃 彥華</td>
+					<td data-label="內容及進度">資料未補齊</td>
+					<td data-label="總金額">168,900</td>
+					<td data-label="狀態">
+						<div class="state state-stop"></div>
+					</td>
+				</tr>
+				<tr>
+					<td data-label="專案號碼">10905001</td>
+					<td data-label="客戶">大久久空間</td>
+					<td data-label="專案名稱">Azure ExpressRoute專線服務正式在台推出記者會</td>
+					<td data-label="業務">Ryan Liu</td>
+					<td data-label="設計">黃 彥華</td>
+					<td data-label="內容及進度">完稿中</td>
+					<td data-label="總金額">168,900</td>
+					<td data-label="狀態">
+						<div class="state state-proceed"></div>
+					</td>
+				</tr>
+
+				<tr>
+					<td data-label="專案號碼">10905001</td>
+					<td data-label="客戶">大久久空間</td>
+					<td data-label="專案名稱">Azure ExpressRoute專線服務正式在台推出記者會</td>
+					<td data-label="業務">Ryan Liu</td>
+					<td data-label="設計">黃 彥華</td>
+					<td data-label="內容及進度">預計本週五結案</td>
+					<td data-label="總金額">168,900</td>
+					<td data-label="狀態">
+						<div class="state state-stop"></div>
+					</td>
+				</tr>
+				<tr>
+					<td data-label="專案號碼">10905001</td>
+					<td data-label="客戶">大久久空間</td>
+					<td data-label="專案名稱">Azure ExpressRoute專線服務正式在台推出記者會</td>
+					<td data-label="業務">Ryan Liu</td>
+					<td data-label="設計">黃 彥華</td>
+					<td data-label="內容及進度">完稿中</td>
+					<td data-label="總金額">168,900</td>
+					<td data-label="狀態">
+						<div class="state state-proceed"></div>
+					</td>
+				</tr>
+				<tr>
+					<td data-label="專案號碼">10905001</td>
+					<td data-label="客戶">大久久空間</td>
+					<td data-label="專案名稱">Azure ExpressRoute專線服務正式在台推出記者會</td>
+					<td data-label="業務">Ryan Liu</td>
+					<td data-label="設計">黃 彥華</td>
+					<td data-label="內容及進度">資料未補齊</td>
+					<td data-label="總金額">168,900</td>
+					<td data-label="狀態">
+						<div class="state state-stop"></div>
+					</td>
+				</tr>
+				<tr>
+					<td data-label="專案號碼">10905001</td>
+					<td data-label="客戶">大久久空間</td>
+					<td data-label="專案名稱">Azure ExpressRoute專線服務正式在台推出記者會</td>
+					<td data-label="業務">Ryan Liu</td>
+					<td data-label="設計">黃 彥華</td>
+					<td data-label="內容及進度">完稿中</td>
+					<td data-label="總金額">168,900</td>
+					<td data-label="狀態">
+						<div class="state state-proceed"></div>
+					</td>
+				</tr>
+
+
+
+			</tbody>
+		</table>
+
+
+
+	</div>
+
+	<footer>
+		<h6>Copyright © 2020 BORNA</h6>
+	</footer>
+
+<!-- 	<script src="js/water.js"></script>
+	<script src="js/XX.js"></script> -->
+</body>
+
+</html>
